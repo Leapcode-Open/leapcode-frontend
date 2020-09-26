@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.lessonDiv {
+    line-height: 1.63;
+}
+
+.lessonDiv ul {
+    @apply ml-4 mt-2 list-disc;
+}
+
+.lessonDiv ul > li {
+    @apply mb-1
+}
+
+.lessonDiv a {
+    @apply underline
+}
+
+
+code {
+    @apply px-2 py-1 rounded bg-gray-100 text-red-800 border;
+}
+
+
+.hover--display-parent:hover .hover--display {
+    display: block;
+}
+
+.loader {
+    border-top-color: #3498db;
+    -webkit-animation: spinner 1.5s linear infinite;
+    animation: spinner 1.5s linear infinite;
+  }
+  
+  @-webkit-keyframes spinner {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
