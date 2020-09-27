@@ -4,6 +4,7 @@ import Card from '../Card'
 import SkeletonLoading from '../SkeletonLoading';
 import PickIssueFeed from './FeedContainer/PickIssue';
 import NewJoinFeed from './FeedContainer/NewJoinFeed';
+import MergePRFeed from './FeedContainer/MergePRFeed';
 
 
 
@@ -15,7 +16,12 @@ const FeedController = ({feed}) => {
     if(feed.verb == 'registered')
         return <NewJoinFeed feed={feed} />
 
-    return (<div>33</div>)
+    if(feed.verb == 'mergedPR')
+        return <MergePRFeed feed={feed} />
+
+
+    return (<span></span>)
+
 }
 
 export default class FeedsList extends Component {
