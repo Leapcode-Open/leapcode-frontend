@@ -22,8 +22,11 @@ import Profile from './V3Pages/Profile';
 import Invite from './V3Pages/Invite'
 import NoPage from './Pages/404';
 import AllProjectsV3 from './V3Pages/AllProjects';
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 function App() {
+
+
 
   return (
       <AuthProvider>
@@ -50,6 +53,13 @@ function App() {
             </Switch>
           </Router>
         </div>
+
+        <CookieConsent
+          cookieName="leapcodecookie"
+          expires={365}
+          cookieValue
+        >This website uses cookies to enhance the user experience.</CookieConsent>
+
       </AuthProvider>
 
   );
