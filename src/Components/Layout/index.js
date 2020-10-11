@@ -10,7 +10,7 @@ class Layout extends Component {
 
   async componentDidMount() {
 
-    fetch('http://localhost:5000/api/auth/user', {
+    fetch(API_URL+`/auth/user`, {
       headers: await GET_TOKEN_HEADER()
     })
       .then(res => res.json())
