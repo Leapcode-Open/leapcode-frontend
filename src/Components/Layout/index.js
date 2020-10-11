@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { GET_TOKEN_HEADER } from '../../constants';
+import { GET_TOKEN_HEADER, API_URL } from '../../constants';
 
 class Layout extends Component {
 
