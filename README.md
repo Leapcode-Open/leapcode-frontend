@@ -16,7 +16,7 @@ Visit [leapcode.io](https://leapcode.io) to signup & recieve access to the platf
 
 ### Contributing
 
-We welcome contributions to the leapcode platform. Read CONTRIBUTING.MD for guidelines.
+We welcome contributions to the leapcode platform. Read [CONTRIBUTING.MD](CONTRIBUTING.md) for guidelines.
 
 ### License
 
