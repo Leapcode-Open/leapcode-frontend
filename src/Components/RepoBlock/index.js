@@ -9,10 +9,10 @@ export const RepoBlock = (props) => {
                     <div className=' px-4 py-4 border-b border-gray-300'>
                         <h2 className="flex items-center"><GoRepo />  <span className='ml-2 mr-2'>{props.organisation}</span> / <span className="ml-2 font-semibold">{props.name}</span></h2>
                         { props.githubInfo ? <div>
-                                    <div className="flex">
+                                    <div className="flex-wrap">
                                         {   props.githubInfo.languages ? <>
                                             { Object.keys(props.githubInfo.languages).map((la) => (
-                                                <div className="px-2 py-1 bg-blue-100 text-blue-600 text-xs mt-3 rounded mr-2">{la}</div>
+                                                <div className="px-2 py-1 bg-blue-100 text-blue-600 text-xs mt-3 rounded mr-2 inline-block">{la}</div>
                                             )) } </> : <div className="px-2 py-1 bg-blue-100 text-blue-600 text-xs mt-3 rounded">{props.githubInfo.language}</div>
                                         }
                                         
